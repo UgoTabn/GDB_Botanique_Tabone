@@ -10,13 +10,19 @@ class Plante{
     int _engrais;
     int _taille;
     int _sante;
+    int _eau;
     int _maturite;
     int _maturiteMax;
     std::string _name;
   public:
     void virtual inspecter();
-    Plante(std::string nom);
-    int inspecter();
+    void mettreEngrais();
+    void arroser();
+    void tailler();
+    void finTourSante();
+    void finTour();
+
+    Plante();
 };
 
 
